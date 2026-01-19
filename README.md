@@ -20,27 +20,3 @@ A robust and easy-to-use C++ utility class for string manipulation. This project
 
 ---
 
-## 🛠 Usage Example
-
-To use this library, simply include `clsString.h` in your project:
-
-```cpp
-#include <iostream>
-#include "clsString.h"
-
-int main() {
-    // Initialize the class
-    clsString myStr("learning c++");
-
-    // 1. Transform to Uppercase
-    std::cout << "Upper: " << myStr.Upercase() << std::endl;
-
-    // 2. Add different data types (Templates in action)
-    myStr.Puch_Last(2026);
-    std::cout << "Updated: " << myStr.getValue() << std::endl; // Output: learning c++ 2026
-
-    // 3. Count words
-    std::cout << "Total Words: " << myStr.CountWord() << std::endl;
-
-    return 0;
-}
