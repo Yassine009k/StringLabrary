@@ -1,2 +1,46 @@
-# StringLabrary
-A custom C++ class to simplify string manipulation (Upper/Lower case, Pushing values, Counting words, etc.)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)
+# 🚀 clsString Library (C++)
+
+A robust and easy-to-use C++ utility class for string manipulation. This project demonstrates how to extend basic string functionality using **Templates**, **OOP principles**, and **C++ Algorithms**.
+
+
+
+## 🌟 Key Features
+
+* **Case Formatting:** Instantly convert strings to `Upercase()` or `LowerCse()`.
+* **Generic Concatenation:** Add any data type (int, string, double) to the start or end using **Templates** (`Puch_First`, `Puch_Last`).
+* **Analytical Tools:**
+    * `CountWord()`: Get the number of words in a string.
+    * `Size()`: Get the exact length of the string.
+    * `IndexOfChar()`: Locate the position of any character.
+* **Data Cleaning:** * `trim()`: Remove unwanted spaces.
+    * `PopValue()`: Remove specific segments from the string.
+    * `clear()`: Reset the string value.
+
+---
+
+## 🛠 Usage Example
+
+To use this library, simply include `clsString.h` in your project:
+
+```cpp
+#include <iostream>
+#include "clsString.h"
+
+int main() {
+    // Initialize the class
+    clsString myStr("learning c++");
+
+    // 1. Transform to Uppercase
+    std::cout << "Upper: " << myStr.Upercase() << std::endl;
+
+    // 2. Add different data types (Templates in action)
+    myStr.Puch_Last(2026);
+    std::cout << "Updated: " << myStr.getValue() << std::endl; // Output: learning c++ 2026
+
+    // 3. Count words
+    std::cout << "Total Words: " << myStr.CountWord() << std::endl;
+
+    return 0;
+}
